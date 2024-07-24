@@ -67,7 +67,7 @@ function init()
     inquirer
         .prompt(questions)
         .then((answers) => {
-            console.log(`Answers: ${stringify(answers)}`);
+            console.log(`Answers Collected`);
             writeToFile('README.md', answers);
         });
 }
