@@ -1,8 +1,8 @@
-# 
+# f
 
 ## Description
 
-s
+f
 
 ## Table of Contents
 
@@ -13,17 +13,23 @@ s
 
 ## Installation
 
-s
+f
 
 ## Usage
 
-s
+f
 
 ## Contributing
 
-s
+f
 
 ## Tests
 
-s
+f
 
+## License
+
+Distributed under the MIT License.## Questions
+
+My GitHub username is f
+My email is f
