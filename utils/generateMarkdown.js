@@ -5,10 +5,11 @@ function renderLicenseBadge(license)
   if (license == 'MIT License') {
     return '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)';
   }
-  else if (license == 'GNU GPL v3') {
+  else if (license == 'GNU General Public License') {
     return '[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)';
   }
   else {
+    console.log("it aint working")
     return '';
   }
 }
@@ -20,7 +21,7 @@ function renderLicenseLink(license)
   if (license == 'MIT License') {
     return 'https://opensource.org/license/MIT';
   }
-  else if (license == 'GNU GPL v3') {
+  else if (license == 'GNU General Public License') {
     return 'https://www.gnu.org/licenses/gpl-3.0';
   }
   else {
@@ -32,15 +33,11 @@ function renderLicenseLink(license)
 // If there is no license, return an empty string
 function renderLicenseSection(license)
 {
-  // if (license == 'MIT License') {
-    
-  // }
-  // else if (license == 'GNU General Public License') {
-    
-  // }
   let content = '';
   content += `## License\n\n`;
-  content += `Distributed under the ${license}.`;
+  content += `Distributed under the ${license}: `;
+  content += renderLicenseLink(license);
+  content += `\n\n ` + renderLicenseBadge(license);
   return content;
 }
 

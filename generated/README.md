@@ -1,8 +1,8 @@
-# hi
+# 
 
 ## Description
 
-hi
+
 
 ## Table of Contents
 
@@ -15,27 +15,29 @@ hi
 
 ## Installation
 
-hi
+
 
 ## Usage
 
-hi
+
 
 ## Contributing
 
-hi
+
 
 ## Tests
 
-hi
+
 
 ## License
 
-Distributed under the MIT License.
+Distributed under the GNU General Public License: https://www.gnu.org/licenses/gpl-3.0
+
+ [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
 ## Questions
 
-My GitHub username is tleavitt
+My GitHub username is: 
 
-My email is tleavitt@gmail.com
+My email is: 
 
