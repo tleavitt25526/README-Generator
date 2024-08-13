@@ -19,7 +19,8 @@ README-GENERATOR folder must be saved, and npm i must be run in the terminal.
 
 ## Usage
 
-As said previously, npm i must be run in the terminal before using this tool. Then, running the command "node index.js" will start the application in the terminal
+As said previously, npm i must be run in the terminal before using this tool. Then, running the command "node index.js" will start the application in the terminal.
+Here is a video walkthrough of the application: [https://www.youtube.com/watch?v=f_JUVGMPjdo](https://youtu.be/f_JUVGMPjdo)
 
 ## Contributing
 
