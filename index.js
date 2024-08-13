@@ -2,6 +2,7 @@
 const { stringify } = require('querystring');
 const inquirer = require('./node_modules/inquirer');
 const fs = require('fs');
+const generateMarkdown = require('./utils/generateMarkdown');
 
 // TODO: Create an array of questions for user input
 const questions = [
@@ -39,23 +40,24 @@ const questions = [
         type: 'list',
         name: 'license',
         message: 'License:',
-        choices: ['License 1', 'License 2']
+        choices: ['MIT License', 'GNU General Public License']
+    },
+    {
+        type: 'input',
+        name: 'user',
+        message: 'GitHub Username:'
+    },
+    {
+        type: 'input',
+        name: 'email',
+        message: 'Email Address:'
     }
 ];
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data)
 {
-    let content = '';
-    content += `# ${data.title}\n\n`; // title
-    content += `## Description\n\n${data.desc}\n\n`; // description
-    content += `## Table of Contents\n\n- [Installation](#installation)\n- [Usage](#usage)\n- [Contributing](#contributing)\n- [Tests](#tests)\n\n`; // table of contents
-    content += `## Installation\n\n${data.install}\n\n`; // installtion
-    content += `## Usage\n\n${data.usage}\n\n`; // usage
-    content += `## Contributing\n\n${data.cont}\n\n`; // contribution
-    content += `## Tests\n\n${data.test}\n\n` // Tests
-
-    fs.writeFile(`./generated/${fileName}`, content, function (err) {
+    fs.writeFile(`./generated/${fileName}`, generateMarkdown(data), function (err) {
         if (err) throw err;
         console.log("README created");
     })
