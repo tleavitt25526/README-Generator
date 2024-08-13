@@ -1,8 +1,8 @@
-# f
+# hi
 
 ## Description
 
-f
+hi
 
 ## Table of Contents
 
@@ -10,26 +10,32 @@ f
 - [Usage](#usage)
 - [Contributing](#contributing)
 - [Tests](#tests)
+- [License](#license)
+- [Questions](#questions)
 
 ## Installation
 
-f
+hi
 
 ## Usage
 
-f
+hi
 
 ## Contributing
 
-f
+hi
 
 ## Tests
 
-f
+hi
 
 ## License
 
-Distributed under the MIT License.## Questions
+Distributed under the MIT License.
 
-My GitHub username is f
-My email is f
+## Questions
+
+My GitHub username is tleavitt
+
+My email is tleavitt@gmail.com
+

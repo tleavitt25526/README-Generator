@@ -50,15 +50,15 @@ function generateMarkdown(data) {
 
   content += `# ${data.title}\n\n`; // title
   content += `## Description\n\n${data.desc}\n\n`; // description
-  content += `## Table of Contents\n\n- [Installation](#installation)\n- [Usage](#usage)\n- [Contributing](#contributing)\n- [Tests](#tests)\n\n`; // table of contents
+  content += `## Table of Contents\n\n- [Installation](#installation)\n- [Usage](#usage)\n- [Contributing](#contributing)\n- [Tests](#tests)\n- [License](#license)\n- [Questions](#questions)\n\n`; // table of contents
   content += `## Installation\n\n${data.install}\n\n`; // installtion
   content += `## Usage\n\n${data.usage}\n\n`; // usage
   content += `## Contributing\n\n${data.cont}\n\n`; // contribution
   content += `## Tests\n\n${data.test}\n\n`; // Tests
-  content += renderLicenseSection(data.license);
-  content += `## Questions\n\n`;
-  content += `My GitHub username is ${data.user}\n`;
-  content += `My email is ${data.email}\n`;
+  content += renderLicenseSection(data.license); // License
+  content += `\n\n## Questions\n\n`; // 
+  content += `My GitHub username is: ${data.user}\n\n`;
+  content += `My email is: ${data.email}\n\n`;
 
   return content;
 }
